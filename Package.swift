@@ -6,9 +6,6 @@ import PackageDescription
 let package = Package(
     name: "PlaygroundBuilder",
     products: [
-//        .library(
-//            name: "PlaygroundBuilder",
-//            targets: ["PlaygroundBuilder"]),
         .library(name: "PlaygroundBuilder", targets: ["PlaygroundBuilder"])
     ],
     dependencies: [
@@ -17,8 +14,6 @@ let package = Package(
     ],
     targets: [
         .target(name: "PlaygroundBuilder"),
-        .testTarget(name: "PlaygroundGeneratorTests", dependencies: ["PlaygroundBuilder"]),
-//        .target(name: "PlaygroundBuilder", dependencies: []),
-//        .testTarget(name: "PlaygroundBuilderTests", dependencies: ["PlaygroundBuilder"]),
+        .testTarget(name: "PlaygroundBuilderTests", dependencies: ["PlaygroundBuilder"]),
     ]
 )

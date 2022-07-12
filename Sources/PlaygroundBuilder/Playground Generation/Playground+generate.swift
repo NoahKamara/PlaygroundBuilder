@@ -32,9 +32,9 @@ extension Playground {
             try fileManager.removeItem(at: pgDirectory)
         }
         
+        print("CREATING PATHS")
         try paths.all.forEach { path in
-            let dirURL = path
-            try fileManager.createDirectory(at: dirURL, withIntermediateDirectories: false, attributes: nil)
+            try fileManager.createDirectory(at: path, withIntermediateDirectories: true, attributes: nil)
         }
         
         //MARK: Manifest.plist
