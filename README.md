@@ -1,3 +1,3 @@
 # PlaygroundGenerator
 
-A description of this package.
+Generate Swift Playground Projects from Swift Code
